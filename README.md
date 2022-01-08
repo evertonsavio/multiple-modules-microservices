@@ -83,21 +83,21 @@
 	</build>
 ```
 7. set maven plugin compiler
-8. ```
-   		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${maven-compiler-plugin.version}</version>
-				<configuration>
-					<release>11</release>
-				</configuration>
-			</plugin>
-		</plugins>
-   ```
+```
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>${maven-compiler-plugin.version}</version>
+            <configuration>
+                <release>11</release>
+            </configuration>
+        </plugin>
+    </plugins>
+```
    
 ---
-### Create a new module and add overwire dependencies on submodules
+8. Create a new module and add overwrite dependencies on submodules
 ```
     <dependencies>
         <dependency>

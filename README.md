@@ -53,13 +53,13 @@
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter</artifactId>
-				<version>${spring-boot.version}}</version>
+				<version>${spring-boot.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-test</artifactId>
-				<version>${spring-boot.version}}</version>
+				<version>${spring-boot.version}</version>
 				<scope>test</scope>
 			</dependency>
 		</dependencies>
@@ -76,7 +76,7 @@
 				<plugin>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-maven-plugin</artifactId>
-					<version>${spring-boot.version}}</version>
+					<version>${spring-boot.version}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
@@ -95,3 +95,20 @@
 			</plugin>
 		</plugins>
    ```
+   
+---
+### Create a new module and add overwire dependencies on submodules
+```
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+```

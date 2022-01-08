@@ -13,7 +13,7 @@ public class AppConfigData {
     }
 
     public String getMyCommonVar() {
-        return myCommonVar;
+        return myCommonVar + "... ok";
     }
 
     public void setMyCommonVar(String myCommonVar) {

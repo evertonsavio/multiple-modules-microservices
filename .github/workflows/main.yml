@@ -19,4 +19,4 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Build with Maven
-        run: cd main-service && mvn --batch-mode --update-snapshots verify
+        run: mvn clean install && cd main-service && mvn --batch-mode --update-snapshots verify

@@ -19,6 +19,6 @@ public class MainServiceApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println("App starts" + ". " + appConfigData.getMyCommonVar());
+        System.out.println("App starts, new test" + ". " + appConfigData.getMyCommonVar());
     }
 }
